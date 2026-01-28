@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description"
+        content="Портфолио frontend-разработчика Ерофеева Игоря. Создание современных сайтов на HTML, CSS и JavaScript.">
+    <meta name="keywords" content="frontend, разработчик, портфолио, HTML, CSS, JavaScript, веб-разработка">
+    <meta name="author" content="Ерофеев Игорь">
+
+    <!-- Open Graph для соцсетей -->
+    <meta property="og:title" content="Ерофеев Игорь | Frontend-разработчик">
+    <meta property="og:description" content="Портфолио frontend-разработчика. Создание современных сайтов.">
+    <meta property="og:type" content="website">
+
+    <!-- Фавиконы для разных устройств -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+    <!-- Манифест для PWA -->
+    <link rel="manifest" href="assets/site.webmanifest">
+
+    <title>Ерофеев Игорь | Frontend-разработчик</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="#home" class="header__logo">ЕИ</a>
+            
+            <!-- Навигация для десктопа -->
+            <nav class="header__nav">
+                <a href="#home" class="header__link active">Главная</a>
+                <a href="#projects" class="header__link">Проекты</a>
+                <a href="#contacts" class="header__link">Контакты</a>
+            </nav>
+            
+            <!-- Кнопка смены темы для десктопа -->
+            <button class="theme-toggle desktop-theme-toggle" id="desktopThemeToggle" aria-label="Переключить тему">
+                <span class="theme-icon">🌙</span>
+            </button>
+            
+            <!-- Гамбургер меню для мобильных -->
+            <button class="hamburger" id="hamburger" aria-label="Меню">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <!-- Мобильное меню (скрыто по умолчанию) -->
+            <div class="mobile-menu" id="mobileMenu">
+                <nav class="mobile-nav">
+                    <a href="#home" class="header__link active">Главная</a>
+                    <a href="#projects" class="header__link">Проекты</a>
+                    <a href="#contacts" class="header__link">Контакты</a>
+                    
+                    <!-- Кнопка смены темы внутри мобильного меню - БЕЗ ТЕКСТА -->
+                    <button class="mobile-theme-toggle" id="mobileThemeToggle" aria-label="Переключить тему">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Главная секция -->
+        <section id="home" class="hero">
+            <div class="container">
+                <h1 class="hero__title fade-in">Привет! Я — <span class="highlight">Ерофеев Игорь</span></h1>
+                <p class="hero__subtitle fade-in delay-1">16-летний frontend-разработчик из Карелии</p>
+                <p class="hero__description fade-in delay-2">Создаю современные сайты, изучаю JavaScript и уже неплохо
+                    знаю CSS3 и HTML5. Здесь собраны мои лучшие работы — от простых лендингов до интерактивных
+                    приложений.</p>
+                <p class="hero__description fade-in delay-3">Люблю, когда дизайн дышит, а код работает идеально.</p>
+
+                <div class="hero__links fade-in delay-4">
+                    <a href="https://witchhanterr.tilda.ws/portfolio" class="btn" target="_blank">
+                        <i class="fas fa-briefcase"></i>
+                        Моё портфолио на Tilda
+                        <span>></span>
+                    </a>
+                    <a href="#projects" class="btn btn-outline">
+                        <i class="fas fa-code"></i>
+                        Смотреть проекты
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Основные проекты -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="projects-razdelitel"></div>
+                <h2 class="section-title slide-in">Мои проекты</h2>
+                <div class="projects-grid">
+                    <!-- Студия создания сайтов -->
+                    <div class="project-card fade-in">
+                        <div class="project-card__icon">
+                            <i class="fas fa-paint-brush fade-in"></i>
+                        </div>
+                        <div class="project-card__content">
+                            <h3>Студия создания сайтов</h3>
+                            <p>Студия полного цикла: дизайн, разработка, продвижение. Современные технологии, чистый
+                                код, понятные сроки.</p>
+                            <div class="project-card__actions">
+                                <a href="https://witchhanter.github.io/Website_creation_studio/" class="btn btn-small"
+                                    target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Смотреть
+                                </a>
+                                <a href="projects/студия создания сайтов 2 м.rar" class="btn btn-small btn-outline download-btn"
+                                    download>
+                                    <i class="fas fa-download"></i>
+                                    Скачать (ZIP)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LOCAL BOX -->
+                    <div class="project-card fade-in delay-1">
+                        <div class="project-card__icon">
+                            <i class="fas fa-box-open fade-in"></i>
+                        </div>
+                        <div class="project-card__content">
+                            <h3>LOCAL BOX</h3>
+                            <p>Ежемесячная подписка на коробки с товарами локальных брендов Петрозаводска.</p>
+                            <div class="project-card__actions">
+                                <a href="https://witchhanter.github.io/Local_Box/" class="btn btn-small"
+                                    target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Смотреть
+                                </a>
+                                <a href="projects/LB_new.rar" class="btn btn-small btn-outline download-btn" download>
+                                    <i class="fas fa-download"></i>
+                                    Скачать (ZIP)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Список дел -->
+                    <div class="project-card fade-in delay-2">
+                        <div class="project-card__icon">
+                            <i class="fas fa-tasks fade-in"></i>
+                        </div>
+                        <div class="project-card__content">
+                            <h3>Список дел</h3>
+                            <p>Интерактивный планировщик с функциями добавления, отметки выполнения и удаления задач.
+                                Все данные сохраняются в браузере.</p>
+                            <div class="project-card__actions">
+                                <a href="https://witchhanter.github.io/to-dolist/" class="btn btn-small"
+                                    target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Смотреть
+                                </a>
+                                <a href="projects/список дел.rar" class="btn btn-small btn-outline download-btn" download>
+                                    <i class="fas fa-download"></i>
+                                    Скачать (ZIP)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Я и 1С -->
+                    <div class="project-card fade-in delay-3">
+                        <div class="project-card__icon">
+                            <i class="fas fa-calculator fade-in"></i>
+                        </div>
+                        <div class="project-card__content">
+                            <h3>Я и 1С</h3>
+                            <p>Мой путь в 1С-разработке и о нашем сообществе — клубе, где мы общаемся, делимся знаниями
+                                и растем вместе.</p>
+                            <div class="project-card__actions">
+                                <a href="https://witchhanter.github.io/1CandI/" class="btn btn-small" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Смотреть
+                                </a>
+                                <a href="projects/итоговый сайт (про меня и про клуб).rar"
+                                    class="btn btn-small btn-outline download-btn" download>
+                                    <i class="fas fa-download"></i>
+                                    Скачать (ZIP)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Моё хобби -->
+                    <div class="project-card fade-in delay-4">
+                        <div class="project-card__icon">
+                            <i class="fas fa-heart fade-in"></i>
+                        </div>
+                        <div class="project-card__content">
+                            <h3>Моё хобби</h3>
+                            <p>Программирование — это не только моя профессия, но и главное увлечение. Здесь я делаю то,
+                                что вдохновляет: пет-проекты, эксперименты и просто код ради интереса.</p>
+                            <div class="project-card__actions">
+                                <a href="https://witchhanter.github.io/MyHobby/" class="btn btn-small" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Смотреть
+                                </a>
+                                <a href="projects/моё хобби.rar" class="btn btn-small btn-outline download-btn" download>
+                                    <i class="fas fa-download"></i>
+                                    Скачать (ZIP)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Конвертер температур -->
+                    <div class="project-card fade-in delay-5">
+                        <div class="project-card__icon">
+                            <i class="fas fa-thermometer-half fade-in"></i>
+                        </div>
+                        <div class="project-card__content">
+                            <h3>Конвертер температур (и не только)</h3>
+                            <p>Утилита для конвертации различных единиц измерения.</p>
+                            <div class="project-card__actions">
+                                <a href="https://witchhanter.github.io/convCT/" class="btn btn-small" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Смотреть
+                                </a>
+                                <a href="projects/конвертер температур (и не только).rar"
+                                    class="btn btn-small btn-outline download-btn" download>
+                                    <i class="fas fa-download"></i>
+                                    Скачать (ZIP)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <h2 class="section-title slide-in">Как можно со мной связаться?</h2>
+                <div class="contacts-grid">
+                    <a href="https://t.me/H43404" class="contact-card fade-in" target="_blank">
+                        <div class="contact-card__icon">
+                            <i class="fab fa-telegram fade-in"></i>
+                        </div>
+                        <div class="contact-card__content">
+                            <h3>Telegram</h3>
+                            <p>Быстрый чат</p>
+                            <span class="arrow">></span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/witchhanter" class="contact-card fade-in delay-1" target="_blank">
+                        <div class="contact-card__icon">
+                            <i class="fab fa-github fade-in"></i>
+                        </div>
+                        <div class="contact-card__content">
+                            <h3>Github</h3>
+                            <p>Мои проекты</p>
+                            <span class="arrow">></span>
+                        </div>
+                    </a>
+
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=witchhanter999@gmail.com"
+                        class="contact-card fade-in delay-2" target="_blank">
+                        <div class="contact-card__icon">
+                            <i class="fas fa-envelope fade-in"></i>
+                        </div>
+                        <div class="contact-card__content">
+                            <h3>Email</h3>
+                            <p>Пишите письма</p>
+                            <span class="arrow">></span>
+                        </div>
+                    </a>
+
+                    <a href="https://discord.com/users/ваш_username" class="contact-card fade-in delay-3"
+                        target="_blank">
+                        <div class="contact-card__icon">
+                            <i class="fab fa-discord fade-in"></i>
+                        </div>
+                        <div class="contact-card__content">
+                            <h3>Discord</h3>
+                            <p>Обсудим вашу задачу</p>
+                            <span class="arrow">></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026. ЕИА. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
