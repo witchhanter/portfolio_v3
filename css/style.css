@@ -1,3 +1,20 @@
+/* Полностью убираем скроллбар везде, но оставляем возможность скролла */
+* {
+  -ms-overflow-style: none;  /* IE и Edge */
+  scrollbar-width: none;      /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none;              /* Chrome, Safari и Opera */
+}
+
+/* Для body и html дополнительно */
+html, body {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+
 /* Reset и базовые стили */
 body::after {
     content: "© 2026. ЕИА.";
@@ -997,4 +1014,5 @@ section {
 
 .hero__description {
     color: var(--hero-description-color);
+
 }
